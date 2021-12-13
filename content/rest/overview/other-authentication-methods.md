@@ -14,16 +14,6 @@ shortTitle: Other authentication methods
 ---
 
 
-{% ifversion fpt or ghes or ghec %}
-While the API provides multiple methods for authentication, we strongly
-recommend using [OAuth](/apps/building-integrations/setting-up-and-registering-oauth-apps/) for production applications. The other
-methods provided are intended to be used for scripts or testing (i.e., cases
-where full OAuth would be overkill). Third party applications that rely on
-{% data variables.product.product_name %} for authentication should not ask for or collect {% data variables.product.product_name %} credentials.
-Instead, they should use the [OAuth web flow](/apps/building-oauth-apps/authorizing-oauth-apps/).
-
-{% endif %}
-
 {% ifversion ghae %}
 
 To authenticate we recommend using [OAuth](/apps/building-integrations/setting-up-and-registering-oauth-apps/) tokens, such a personal access token through the [OAuth web flow](/apps/building-oauth-apps/authorizing-oauth-apps/).
